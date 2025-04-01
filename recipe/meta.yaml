@@ -17,7 +17,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [(cuda_compiler_version in (None, "None", "11.8")) or (not (linux64 or aarch64))]
 
 requirements:
@@ -82,10 +82,7 @@ about:
   license_url: https://docs.nvidia.com/cuda/cublasdx/license.html
   summary: The NVIDIA cuFFTMp (cuFFT Multi-process) library
   description: >-
-    The multi-node FFT functionality, available through the cuFFTMp API, enables
-    scientists and engineers to solve distributed 2D and 3D FFTs in exascale
-    problems. The library handles all the communications between machines,
-    allowing users to focus on other aspects of their problems.
+    The multi-node FFT functionality, available through the cuFFTMp API, enables scientists and engineers to solve distributed 2D and 3D FFTs in exascale problems. The library handles all the communications between machines, allowing users to focus on other aspects of their problems.
   doc_url: https://docs.nvidia.com/hpc-sdk/cufftmp
 
 extra:
