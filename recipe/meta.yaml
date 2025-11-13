@@ -6,7 +6,7 @@
 {% set extension = "tar.xz" %}  # [unix]
 
 {% set cuda_compiler_version = cuda_compiler_version | default("None") %}
-{% set cuda_major_version  = cuda_compiler_version.split('.')[0] %}
+{% set cuda_major_version = cuda_compiler_version.split('.')[0] %}
 
 {% set sha256 = "3f4e447d0fb3571ddd751cd7215f182a1c14dbc4ff23cdfc988ef491a6cc984a" %}  # [linux64]
 {% set sha256 = "17482614488d9ed190d576ba041762df8252b9a67768cbc118042c6603a78c19" %}  # [aarch64]
