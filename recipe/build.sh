@@ -1,10 +1,10 @@
 #!/bin/bash
 
-set -e
-
-check-glibc lib/libcufftMp.so.*
+set -ex
 
 mkdir -p $PREFIX/lib/
 
 cp -rv include $PREFIX/
-cp -rv lib $PREFIX/
+cp -rv lib/$CUDA_MAJOR_VERSION/* $PREFIX/lib
+
+check-glibc $PREFIX/lib/libcufftMp.so.*
